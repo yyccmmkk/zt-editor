@@ -1,0 +1,17 @@
+.wrapper{
+    width:100%;
+    background:black;
+}
+.main{
+    width:100%;
+    height: calc(100vh - 70px);
+    display:flex;
+    background-color:green;
+    position:relative;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    justify-content:space-between;
+
+}
