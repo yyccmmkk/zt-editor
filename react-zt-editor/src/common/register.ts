@@ -6,7 +6,7 @@ Utils.register({
     type: 'banner',
     data: {
         type: 'banner',
-        src: '',
+        src: 'http://asserts.xcarimg.com/ztEditor/assets/img/tuwen.png',
         link: '',
         width: 500,
         height: 300,
