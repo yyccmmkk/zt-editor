@@ -25,6 +25,7 @@ class GuttersGrid extends React.Component {
 
     render() {
         const classes = (this.props as any).classes;
+        debugger;
         return (
             <div className={classes.root}>
                 <Top />

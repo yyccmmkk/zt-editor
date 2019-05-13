@@ -5,6 +5,7 @@ import grey from '@material-ui/core/colors/grey';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import './Top.css';
+import {store} from "../../redux/store";
 
 
 const styles = (theme:any) => ({
@@ -14,7 +15,8 @@ const styles = (theme:any) => ({
         color: '#fff',
         backgroundColor:grey["900"],
         textDecoration: 'inherit',
-        textAlign:'left'
+        textAlign:'left',
+
     },
     button:{
         color:'#fff',
@@ -30,6 +32,7 @@ class Top extends React.Component{
     constructor(props:any) {
         super(props);
     }
+
     render(){
         const classes = (this.props as any).classes;
         return (
@@ -37,16 +40,16 @@ class Top extends React.Component{
                 <LinearBuffer/>
                 <Grid container  justify="space-between">
                     <Grid item xs={2}>
-                        <h4 style={{color:'#fff',textIndent:'2em',minWidth:140}}>专题DIY工具</h4>
+                        <h4 style={{color:'#fff',height:"70px",lineHeight:'70px', textIndent:'2em',minWidth:140}}>专题DIY工具</h4>
                     </Grid>
                     <Grid item xs={7}>
-                        <p className={'topPath'}>
+                        <p className={'topPath'} style={{height:"49px",lineHeight:'49px' }}>
                             information:path/title/des/date
                         </p>
                     </Grid>
                     <Grid item xs={3}>
                         <div className={'topSave'}>
-                            <Button variant="outlined"  color="primary" >
+                            <Button variant="outlined"  color="primary"  onClick={(e:any)=>console.log(store.getState())}>
                                 保存
                             </Button>
                             <span className={'w16'}> </span>

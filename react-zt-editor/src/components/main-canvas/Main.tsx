@@ -2,9 +2,11 @@ import React from 'react';
 import {withStyles} from '@material-ui/core/styles';
 import List from '../../redux/container/ComponentList';
 
+
 const styles = (theme: any) => ({
     root: {
         minWidth: 1000,
+        position:'relative',
         height: '100%',
         color: 'inherit',
         backgroundColor: 'yellow',

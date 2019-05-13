@@ -11,7 +11,7 @@ const mapStateToProps=(state:any)=>{
 const mapDispatchToProps = (dispatch: any, ownProps: any) => {
     return {
         onClick:(type:string)=>{
-            debugger;
+            dispatch(Actions.increment());
             dispatch(Actions.addAction(type))
         }
     }

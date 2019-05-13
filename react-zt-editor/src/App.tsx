@@ -6,7 +6,9 @@ import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
 import { BrowserRouter as Router} from "react-router-dom";
 import './App.css';
+import 'typeface-roboto';
 import Layout from './layout'
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 
 
 const theme = createMuiTheme({

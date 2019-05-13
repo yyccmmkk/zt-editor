@@ -13,7 +13,7 @@ class RouteConfig extends React.Component {
             <div>
                 {
                     routes.map((v:any,i:number)=>{
-                        return  <Route key={i} path={v.path} component={v.component}/>
+                        return  <Route strict={true} exact={true} key={i} path={v.path} component={v.component}/>
                     })
                 }
             </div>
