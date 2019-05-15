@@ -31,7 +31,7 @@ class Banner extends React.Component {
         const { src,x,y,width,height,index}=this.props;
 
         return (
-            <div data-type={'banner'} onClick={this.handleClick}  className={'banner'}
+            <div data-type={'banner'} data-index={index} onClick={this.handleClick}  className={'banner'}
                  style={{
                     left:x,
                     top:y,

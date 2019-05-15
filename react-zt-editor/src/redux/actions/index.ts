@@ -75,6 +75,8 @@ export default class Actions {
         }
     }
 
+
+
     static updateComponentAction(data: { index: number, data: any }) {
         return {
             type: UPDATE_COMPONENT,

@@ -11,7 +11,7 @@ import {
     REMOVE_COMPONENT,
     REGISTER_COMPONENT,
     INDEX_INCREMENT,
-    UPDATE_COMPONENT
+    UPDATE_COMPONENT,
 } from '../actions';
 
 import { reducer as formReducer } from 'redux-form'
@@ -57,6 +57,7 @@ class Reducers {
         Object.assign(list[index],data);
         return list
     }
+
     static  path(ui:any,path:string){
         return Object.assign({},ui,{path})
     }
@@ -74,6 +75,7 @@ class Reducers {
 
             case UPDATE_COMPONENT:
                 return Reducers.updateItem(list,action.data);
+
 
             default:
                 return list
